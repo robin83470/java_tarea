@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox spacing="12" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.ejericio1.AgeController">
+    <padding><Insets top="20" right="24" bottom="20" left="24"/></padding>
+    <HBox spacing="10">
+        <Label text="Fecha de nacimiento"/>
+        <TextField fx:id="txtFecha" promptText="dd/MM/aaaa"/>
+    </HBox>
+    <HBox spacing="10">
+        <Button text="Calcular" onAction="#calcular"/>
+        <Button text="Limpiar" onAction="#limpiar"/>
+    </HBox>
+    <Label fx:id="lblResultado" text=""/>
+</VBox>

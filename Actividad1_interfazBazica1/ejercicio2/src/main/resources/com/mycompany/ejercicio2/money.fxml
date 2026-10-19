@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox spacing="12" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.ejercicio2.MoneyController">
+    <padding><Insets top="20" right="24" bottom="20" left="24"/></padding>
+    <HBox spacing="10">
+        <Label text="Dinero:"/>
+        <TextField fx:id="txtDinero"/>
+        <Button text="X" onAction="#limpiar"/>
+        <Button text="Desglosar" onAction="#desglosar"/>
+    </HBox>
+    <GridPane hgap="30" vgap="8">
+        <Label text="Billetes de $500" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <Label fx:id="lbl500" text="0" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+        <Label text="Billetes de $200" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <Label fx:id="lbl200" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <Label text="Billetes de $100" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <Label fx:id="lbl100" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        <Label text="Billetes de $50" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <Label fx:id="lbl50" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+        <Label text="Billetes de $20" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+        <Label fx:id="lbl20" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+        <Label text="Monedas de $10" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+        <Label fx:id="lbl10" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+        <Label text="Monedas de $5" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+        <Label fx:id="lbl5" text="0" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+        <Label text="Monedas de $2" GridPane.columnIndex="0" GridPane.rowIndex="7"/>
+        <Label fx:id="lbl2" text="0" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+        <Label text="Monedas de $1" GridPane.columnIndex="0" GridPane.rowIndex="8"/>
+        <Label fx:id="lbl1" text="0" GridPane.columnIndex="1" GridPane.rowIndex="8"/>
+    </GridPane>
+</VBox>
